@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile - BBMPCS</title>
+  <meta name="description"
+    content="Invest in Startups poised to grow. Join other investors in investing in businesses you believe in.">
+  <script src="../../HTWF/scripts/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../HTWF/scripts/bootstrap/css/bootstrap.css">
+  <script src="../../HTWF/scripts/script.js"></script>
+  <link rel="stylesheet" href="../../HTWF/style.css">
+  <link rel="stylesheet" href="../../HTWF/css/content-box.css">
+  <link rel="stylesheet" href="../../HTWF/css/image-box.css">
+  <link rel="stylesheet" href="../../HTWF/css/animations.css">
+  <link rel="stylesheet" href="../../HTWF/css/components.css">
+  <link rel="stylesheet" href="../../HTWF/scripts/flexslider/flexslider.css">
+  <link rel="stylesheet" href="../../HTWF/scripts/magnific-popup.css">
+  <link rel="stylesheet" href="../../HTWF/scripts/php/contact-form.css">
+  <link rel="stylesheet" href="../../HTWF/scripts/social.stream.css">
+  <link rel="icon" href="../../images/bbmpcs-logo.png">
+  <link rel="stylesheet" href="../../skin.css">
+  <link rel="stylesheet" href="../../HTWF/css/style.css">
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <!--Begin Head Section-->
+  <header class="fixed-top scroll-change" data-menu-anima="fade-bottom">
+    <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-main">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo-default" src="../../images/bbmpcs-logo.png" alt="logo" />
+              <img class="logo-retina" src="../../images/bbmpcs-logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <div class="nav navbar-nav navbar-left">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="/save">Save</a>
+                </li>
+                <li>
+                  <a href="/invest">Invest</a>
+                </li>
+                <li>
+                  <a href="/loan">Loan</a>
+                </li>
+                <li>
+                  <a href="/about-us">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="logged-out">
+                  <a href="/login">Login</a>
+                </li>
+                <li class="logged-out">
+                  <a href="/register">Register</a>
+                </li>
+                <li class="logged-in dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#"><span
+                      id="userDetails"></span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu multi-level">
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/dashboard/profile">Profile</a></li>
+                    <li id="logout"><a href="/logout">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--End Head Section-->
+  <!--Begin Main Section-->
+  <div class="section-empty">
+    <div class="container content">
+      <div class="d-flex">
+        <h2>My Profile</h2>
+      </div>
+      <hr class="space m">
+      <div class="alert" id="profile-alert"></div>
+      <hr class="space m">
+      <div class="advs-box advs-box-multiple shadow-1">
+        <div class="advs-box-content">
+          <h4>Basic Profile</h4>
+          <form class="form-box form-ajax" id="basic-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" name="firstName" id="firstName" class="form-control form-value"
+                    placeholder="First Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName">Last Name</label>
+                  <input type="text" name="lastName" id="lastName" class="form-control form-value"
+                    placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control form-value" placeholder="Email"
+                    inputmode="email" disabled>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control form-value"
+                    placeholder="Phone Number" inputmode="tel">
+                </div>
+              </div>
+            </div>
+            <input type="button" value="Update Profile" id="basic-button" class="btn">
+          </form>
+        </div>
+      </div>
+      <hr class="space">
+      <div class="advs-box advs-box-multiple shadow-1">
+        <div class="advs-box-content">
+          <h4>Contact Information</h4>
+          <form class="form-box form-ajax" id="contact-form">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="address">Home Address</label>
+                  <input type="text" name="address" id="address" class="form-control form-value"
+                    placeholder="Home Address">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" class="form-control form-value" placeholder="City">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <input type="text" name="state" id="state" class="form-control form-value" placeholder="State">
+                </div>
+              </div>
+            </div>
+            <input type="button" value="Update Contact Information" id="basic-button" class="btn">
+          </form>
+        </div>
+      </div>
+      <hr class="space">
+      <div class="advs-box advs-box-multiple shadow-1">
+        <div class="advs-box-content">
+          <div class="d-flex">
+            <h4>Bank Details</h4>
+            <button type="button" class="btn" id="new-bank">Add New</button>
+          </div>
+          <form class="form-box form-ajax" id="bank-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="bank">Bank</label>
+                  <select name="bank" id="bank" class="form-control form-value">
+                    <option value="" disabled selected hidden>Bank</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="accountNumber">Account Number</label>
+                  <input type="number" name="accountNumber" id="accountNumber" class="form-control form-value"
+                    placeholder="Account Number">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="address">Account Name</label>
+                  <input type="text" name="accountName" id="accountName" class="form-control form-value"
+                    placeholder="Account Name" disabled required>
+                </div>
+              </div>
+            </div>
+            <input type="button" value="Save Bank Account" id="bank-button" class="btn btn-primary">
+            <input type="button" value="Cancel" id="cancel-button" class="btn btn-danger">
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--End Main Section-->
+  <!--Begin Footer Section-->
+  <footer class="footer-base">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-center text-left">
+            <img width="120" src="../../images/bbmpcs-logo.png" alt="" />
+          </div>
+          <div class="col-md-6 footer-left text-left">
+            <p>No 62, Erepa Road,
+              Yenizuegene,
+              Yenagoa,
+              Bayelsa State,
+              Nigeria</p>
+            <div class="tag-row">
+              <span>hello@bbmpcs.ng</span>
+              <span>+2349030487810</span>
+            </div>
+          </div>
+          <div class="col-md-3 footer-left text-right text-left-sm">
+            <div class="btn-group social-group btn-group-icons">
+              <a target="_blank" href="https://facebook.com/brassandbooks" data-social="share-facebook">
+                <i class="fa fa-facebook text-xs circle"></i>
+              </a>
+              <a target="_blank" href="https://instagram.com/brassandbooks" data-social="share-instagram">
+                <i class="fa fa-instagram text-xs circle"></i>
+              </a>
+              <!--<a target="_blank" href="#" data-social="share-google">
+                        <i class="fa fa-google-plus text-xs circle"></i>
+                    </a>
+                    <a target="_blank" href="#" data-social="share-linkedin">
+                        <i class="fa fa-linkedin text-xs circle"></i>
+                    </a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row copy-row">
+        <div class="col-md-12 copy-text">
+          © 2019 BBMPCS <span>Developed by <a class="para" href="http://safescrow.com.ng/">SafeScrow</span></a>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="../../HTWF/scripts/font-awesome/css/font-awesome.css">
+    <!-- <script src="../../HTWF/scripts/main.js"></script> -->
+    <script async src="../../HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../HTWF/scripts/imagesloaded.min.js"></script>
+    <script src='../../HTWF/scripts/jquery.progress-counter.js'></script>
+    <script src='../../HTWF/scripts/jquery.magnific-popup.min.js'></script>
+    <script src="../../HTWF/scripts/smooth.scroll.min.js"></script>
+    <script>
+      if (!user) {
+        window.location = '/login';
+      } else {
+        $("#dashboard-title").text(`${userDetails.firstName}\'s`)
+      }
+      $("#bank-form").hide();
+      // Get Bank List
+      $.ajax({
+        url: "https://api.paystack.co/bank",
+        method: "GET",
+        headers: {
+          authorization: "Bearer sk_test_2304a0f9fe06f61b7f9314f6c0dcd4296b76a06a"
+        },
+        contentType: "application/json"
+      }).done(res => {
+        const banks = res.data.map(bank =>
+          `
+          <option value="${bank.code}">${bank.name}</option>
+        `);
+        $("#bank").append(banks);
+      });
+
+      $(document).ready(() => {
+        // Display Bank Form
+        $("#new-bank").on("click", () => {
+          $("#bank-form").show();
+          $("#new-bank").attr("disabled", true);
+        });
+        // Hide Bank Form
+        $("#cancel-button").on("click", () => {
+          $("#bank-form").hide();
+          $("#new-bank").attr("disabled", false);
+        });
+
+        // Basic Details from userDetails
+        const { firstName, lastName, email, _id } = userDetails;
+        $("#firstName").val(firstName);
+        $("#lastName").val(lastName);
+        $("#email").val(email);
+
+        // Resolve Account Number
+        $("#accountNumber").on("blur", () => {
+          
+          $.ajax({
+            url: `https://api.paystack.co/bank/resolve?account_number=${$("#accountNumber").val()}&bank_code=${$("#bank").val()}`,
+            method: "GET",
+            headers: {
+              authorization: "Bearer sk_test_2304a0f9fe06f61b7f9314f6c0dcd4296b76a06a"
+            },
+            contentType: "application/json"
+          }).done(res => {
+            console.log(res);
+            
+            $("#accountName").val(res.data.account_name);
+          });
+        })
+      });
+    </script>
+  </footer>
+  <!--End Footer Section-->
+</body>
+
+</html>

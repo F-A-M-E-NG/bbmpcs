@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BBMPCS</title>
+	<meta name="description" content="Inovative Solutions tailored to meet your financial objectives">
+	<script src="./HTWF/scripts/jquery.min.js"></script>
+	<link rel="stylesheet" href="./HTWF/scripts/bootstrap/css/bootstrap.css">
+	<script src="./HTWF/scripts/script.js"></script>
+	<link rel="stylesheet" href="./HTWF/style.css">
+	<link rel="stylesheet" href="./HTWF/css/content-box.css">
+	<link rel="stylesheet" href="./HTWF/css/image-box.css">
+	<link rel="stylesheet" href="./HTWF/css/animations.css">
+	<link rel="stylesheet" href="./HTWF/css/components.css">
+	<link rel="stylesheet" href="./HTWF/scripts/flexslider/flexslider.css">
+	<link rel="stylesheet" href="./HTWF/scripts/magnific-popup.css">
+	<link rel="stylesheet" href="./HTWF/scripts/php/contact-form.css">
+	<link rel="stylesheet" href="./HTWF/scripts/social.stream.css">
+	<link rel="icon" href="./images/bbmpcs-logo.png">
+	<link rel="stylesheet" href="./skin.css">
+	<link rel="stylesheet" href="./HTWF/css/style.css">
+</head>
+
+<body>
+	<div id="preloader"></div>
+	<header class="fixed-top scroll-change" data-menu-anima="fade-bottom">
+		<div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+			<div class="navbar navbar-main">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="/">
+							<img class="logo-default" src="./images/bbmpcs-logo.png" alt="logo" />
+							<img class="logo-retina" src="./images/bbmpcs-logo.png" alt="logo" />
+						</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<div class="nav navbar-nav navbar-left">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="/save">Save</a>
+								</li>
+								<li>
+									<a href="/invest">Invest</a>
+								</li>
+								<li>
+									<a href="/loan">Loan</a>
+								</li>
+								<li>
+									<a href="/about-us">About Us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav navbar-nav navbar-right">
+							<ul class="nav navbar-nav">
+								<li class="logged-out">
+									<a href="/login">Login</a>
+								</li>
+								<li class="logged-out active">
+									<a href="/register">Register</a>
+								</li>
+								<li class="logged-in dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#"><span
+											id="userDetails"></span> <span class="caret"></span></a>
+									<ul class="dropdown-menu multi-level">
+										<li><a href="/dashboard">Dashboard</a></li>
+										<li><a href="/dashboard/profile">Profile</a></li>
+										<li id="logout"><a href="/logout">Log Out</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-title full-screen-title white" data-parallax="scroll" data-position="top"
+		data-natural-height="1080" data-natural-width="1920" data-image-src="./images/hd-1.jpg">
+		<div class="overlaybox">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="title-base">
+							<hr class="anima" />
+							<h2>Innovative Solutions tailored to meet your financial objectives</h2>
+							<!--
+										<p>Things don't have to change the world to be important</p>
+									-->
+							<br>
+							<br>
+							<a href="#products" class="circle-button btn btn-lg shadow-1">Explore Products</a><span
+								class="space"></span>
+							<a href="/register" class="circle-button btn btn-border btn-lg logged-out"><i class="fa fa-play"></i>Get
+								Started</a>
+						</div>
+					</div>
+					<div class="col-md-6" id="title-img">
+						<img src="./images/savings.svg" alt="BBMPCS">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container content">
+		<hr class="space" id="products" />
+		<hr class="space l" />
+		<div class="flexslider carousel outer-navs"
+			data-options="minWidth:200,itemMargin:30,numItems:3,controlNav:true,directionNav:true">
+			<ul class="slides">
+				<li>
+					<div class="advs-box advs-box-top-icon-img boxed-inverse shadow-1">
+						<a class="img-box lightbox img-scale-up" href="#">
+							<span><img src="./images/business-shop.png" alt=""></span>
+						</a>
+						<div class="advs-box-content">
+							<h3>Savings products</h3>
+							<p>
+								Savings products that fit your short to long goals with next to none interest rates
+							</p>
+							<a class="btn btn-sm" href="/save">View All</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="advs-box advs-box-top-icon-img boxed-inverse shadow-1">
+						<a class="img-box lightbox img-scale-up" href="#">
+							<span><img src="./images/investing.png" alt=""></span>
+						</a>
+						<div class="advs-box-content">
+							<h3>Investment Products</h3>
+							<p>
+								Short to Long term investment products that matches your risk appetite
+							</p>
+							<a class="btn btn-sm" href="/invest">View All</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="advs-box advs-box-top-icon-img boxed-inverse shadow-1">
+						<a class="img-box lightbox img-scale-up" href="#">
+							<span><img src="./images/loan.png" alt=""></span>
+						</a>
+						<div class="advs-box-content">
+							<h3>Loan Products</h3>
+							<p>
+								Loans for individuals and groups; Working Capital financing for small to mid level businesses
+							</p>
+							<a class="btn btn-sm" href="/loan">View All</a>
+						</div>
+					</div>
+				</li>
+				<!--
+					<li>
+					<div class="advs-box advs-box-top-icon-img boxed-inverse shadow-1">
+						<a class="img-box lightbox img-scale-up" href="#">
+							<span><img src="./images/image-1.jpg" alt=""></span>
+						</a>
+						<div class="advs-box-content">
+							<h3>Content box title</h3>
+							<p>
+								Interdum iusto pulvinar consequuntur augue optio, repellat fuga! Purus expedita fusco.
+							</p>
+						</div>
+					</div>
+				</li>
+				-->
+			</ul>
+		</div>
+	</div>
+	<div class="section-bg-image bg-top" style="background-image:url(./images/long-2.jpg)">
+		<div class="container content">
+			<h1 class="text-center">Features</h1>
+			<hr class="space" />
+			<div class="row vertical-row">
+				<div class="col-md-6">
+					<img src="./images/box-1.png" alt="" data-anima="fade-left" data-time="1000" />
+				</div>
+				<div class="col-md-6">
+					<h4>Analytics & reporting</h4>
+					<p>
+						Algolia’s analytics dashboard helps product teams better understand what their users are looking for most,
+						as well as where they are hitting dead-ends most often.
+						Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismo.
+					</p>
+					<a href="#" class="circle-button btn btn-sm">View datas</a>
+				</div>
+			</div>
+			<hr class="space m" />
+			<div class="row vertical-row">
+				<div class="col-md-6">
+					<h4>Analytics & reporting</h4>
+					<p>
+						Algolia’s analytics dashboard helps product teams better understand what their users are looking for most,
+						as well as where they are hitting dead-ends most often.
+						Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismo.
+					</p>
+					<hr class="space s" />
+					<a href="#" class="circle-button btn btn-sm">View datas</a><span class="space"></span>
+					<a href="#" class="circle-button btn btn-border btn-sm">Details</a>
+				</div>
+				<div class="col-md-6">
+					<img src="./images/box-2.png" alt="" data-anima="fade-right" data-time="1000" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-bg-image bg-top" style="background-image:url(./images/bg-14.png)">
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-4">
+					<h1>People are beautiful</h1>
+					<p>
+						Aaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+						in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+				<div class="col-md-8 boxed-inverse shadow-1">
+					<div class="row">
+						<div class="col-md-6">
+							<h4>Premium support</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed doido.</p>
+							<hr class="space s" />
+							<div class="counter-box-simple text-color-2"><span class="counter text-l" data-speed="5000"
+									data-to="50000" data-refresh-interval="100"></span><span> Costumers</span></div>
+						</div>
+						<div class="col-md-6">
+							<ul class="fa-ul text-color ">
+								<li><i class="fa-li fa fa-check"></i> Experienced team</li>
+								<li><i class="fa-li fa fa-check"></i> Lovely, friendly and funny people</li>
+								<li><i class="fa-li fa fa-check"></i> Thousands of satisfied cosutmers</li>
+								<li><i class="fa-li fa fa-check"></i> Billions of transistors</li>
+								<li><i class="fa-li fa fa-check"></i> Nanometric technologies</li>
+								<li><i class="fa-li fa fa-check"></i> Revolutionary flow work method</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="space" />
+			<div class="flexslider carousel outer-navs"
+				data-options="minWidth:200,itemMargin:30,numItems:4,controlNav:false,directionNav:true">
+				<ul class="slides">
+					<li>
+						<a class="img-box lightbox shadow-1" href="./images/gallery/image-1.jpg" data-lightbox-anima="fade-top">
+							<img src="./images/gallery/image-1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a class="img-box lightbox shadow-1" href="./images/gallery/image-1.jpg" data-lightbox-anima="fade-top">
+							<img src="./images/gallery/image-2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a class="img-box lightbox shadow-1" href="./images/gallery/image-1.jpg" data-lightbox-anima="fade-top">
+							<img src="./images/gallery/image-9.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a class="img-box lightbox shadow-1" href="./images/gallery/image-1.jpg" data-lightbox-anima="fade-top">
+							<img src="./images/gallery/image-3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a class="img-box lightbox shadow-1" href="./images/gallery/image-1.jpg" data-lightbox-anima="fade-top">
+							<img src="./images/gallery/image-1.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<i class="scroll-top scroll-top-mobile show fa fa-sort-asc"></i>
+	<footer class="footer-base">
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 footer-center text-left">
+						<img width="120" src="./images/bbmpcs-logo.png" alt="" />
+					</div>
+					<div class="col-md-6 footer-left text-left">
+						<p>No 62, Erepa Road,
+							Yenizuegene,
+							Yenagoa,
+							Bayelsa State,
+							Nigeria</p>
+						<div class="tag-row">
+							<span>hello@bbmpcs.ng</span>
+							<span>+2349030487810</span>
+						</div>
+					</div>
+					<div class="col-md-3 footer-left text-right text-left-sm">
+						<div class="btn-group social-group btn-group-icons">
+							<a target="_blank" href="https://facebook.com/brassandbooks" data-social="share-facebook">
+								<i class="fa fa-facebook text-xs circle"></i>
+							</a>
+							<a target="_blank" href="https://instagram.com/brassandbooks" data-social="share-instagram">
+								<i class="fa fa-instagram text-xs circle"></i>
+							</a>
+							<!--<a target="_blank" href="#" data-social="share-google">
+									<i class="fa fa-google-plus text-xs circle"></i>
+							</a>
+							<a target="_blank" href="#" data-social="share-linkedin">
+									<i class="fa fa-linkedin text-xs circle"></i>
+							</a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row copy-row">
+				<div class="col-md-12 copy-text">
+					© 2019 BBMPCS <span>Developed by <a class="para" href="http://safescrow.com.ng/">SafeScrow</span></a>
+				</div>
+			</div>
+		</div>
+		<link rel="stylesheet" href="./HTWF/scripts/font-awesome/css/font-awesome.css">
+		<script src="./HTWF/scripts/index.js"></script>
+		<script async src="./HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./HTWF/scripts/imagesloaded.min.js"></script>
+		<script src="./HTWF/scripts/parallax.min.js"></script>
+		<script src="./HTWF/scripts/flexslider/jquery.flexslider-min.js"></script>
+		<script async src="./HTWF/scripts/isotope.min.js"></script>
+		<script async src="./HTWF/scripts/php/contact-form.js"></script>
+		<script async src="./HTWF/scripts/jquery.progress-counter.js"></script>
+		<script async src="./HTWF/scripts/jquery.tab-accordion.js"></script>
+		<script async src="./HTWF/scripts/bootstrap/js/bootstrap.popover.min.js"></script>
+		<script async src="./HTWF/scripts/jquery.magnific-popup.min.js"></script>
+		<script src="./HTWF/scripts/social.stream.min.js"></script>
+		<script src="./HTWF/scripts/jquery.slimscroll.min.js"></script>
+		<script src="./HTWF/scripts/smooth.scroll.min.js"></script>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+a.para {
+  text-decoration-line: underline;
+}
+.alert {
+  width: 100%;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.alert-danger {
+  background-color: red;
+  color: white;
+}
+.alert-success {
+  background-color: green;
+  color: white;
+}
+.alert-warning {
+  background-color: orange;
+  color: white;
+}
+
+div.services {
+  display: flex;
+}
+
+.services-items-top {
+  order: 0;
+}
+
+.services-items-down {
+  order: 1;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 425px) {
+  #title-img {
+    display: none;
+  }
+}

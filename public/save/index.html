@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savings | BBMPCS</title>
+  <meta name="description" content="Inovative Savings Solutions tailored to meet your financial objectives">
+  <script src="../HTWF/scripts/jquery.min.js "></script>
+  <script src="../HTWF/scripts/parallax.min.js"></script>
+  <link rel="stylesheet" href="../HTWF/scripts/bootstrap/css/bootstrap.css">
+  <script src="../HTWF/scripts/script.js"></script>
+  <link rel="stylesheet" href="../HTWF/style.css">
+  <link rel="stylesheet" href="../HTWF/css/content-box.css">
+  <link rel="stylesheet" href="../HTWF/css/animations.css">
+  <link rel="stylesheet" href="../HTWF/css/components.css">
+  <link rel="stylesheet" href="../HTWF/scripts/magnific-popup.css">
+  <link rel="stylesheet" href="../HTWF/scripts/php/contact-form.css">
+  <link rel="icon" href="../images/bbmpcs-logo.png">
+  <link rel="stylesheet" href="../skin.css">
+  <link rel="stylesheet" href="../HTWF/css/style.css">
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <header class="fixed-top scroll-change" data-menu-anima="fade-bottom">
+    <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-main">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo-default" src="../images/bbmpcs-logo.png" alt="logo" />
+              <img class="logo-retina" src="../images/bbmpcs-logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <div class="nav navbar-nav navbar-left">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="/save">Save</a>
+                </li>
+                <li>
+                  <a href="/invest">Invest</a>
+                </li>
+                <li>
+                  <a href="/loan">Loan</a>
+                </li>
+                <li>
+                  <a href="/about-us">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="logged-out">
+                  <a href="/login">Login</a>
+                </li>
+                <li class="logged-out">
+                  <a href="/register">Register</a>
+                </li>
+                <li class="logged-in dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#"><span
+                      id="userDetails"></span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu multi-level">
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/dashboard/profile">Profile</a></li>
+                    <li id="logout"><a href="/logout">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-title" style="background-image:url(../images/bg-img-10.png)">
+    <div class="container">
+      <div class="title-base">
+        <hr class="anima" />
+        <h1>Savings</h1>
+        <p>Our savings products</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-empty">
+    <div class="container content">
+      <div class="row vertical-row">
+        <div class="col-md-6 col-md-push-6">
+          <img class="anima" src="../images/undraw_mobile_payments_edgf.svg" alt="" />
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <h2><a href="#">eSavings</a></h2>
+          <p class="niche-box-content">
+            A convenient, secure and supporting savings product that enables you to increase your cash base and
+            creating extra income. It is a daily fixed amount contribution with withdrawals only allowed at the end
+            of the month of the contribution if need be.
+          </p>
+          <a class="btn btn-sm logged-out" href="/register">Get Started</a>
+          <a class="btn btn-sm logged-in" href="/dashboard/createplan/?plan=esavings">Get Started</a>
+        </div>
+      </div>
+      <hr class="space">
+      <hr class="space">
+      <div class="row vertical-row">
+        <div class="col-md-6">
+          <img class="anima" src="../images/savings.svg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h2><a href="#">Daily Micro Investments (DMI)</a></h2>
+          <p class="niche-box-content">
+            A holder of this account saves for a period of twelve(12) months without withdrawals and earns
+            competitive interest of 8% and then he/she can have access to loan facility worth twice of his
+            investment from Brass & Books MPC ltd.
+          </p>
+          <a class="btn btn-sm logged-out" href="/register">Get Started</a>
+          <a class="btn btn-sm logged-in" href="/dashboard/createplan/?plan=dmi">Get Started</a>
+        </div>
+      </div>
+      <hr class="space">
+      <hr class="space">
+      <div class="row vertical-row">
+        <div class="col-md-6 col-md-push-6">
+          <img class="anima" src="../images/business-shop.png" alt="" />
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <h2><a href="#">Term Fund</a></h2>
+          <p class="niche-box-content">
+            This product offers a convenient, flexible and secure saving option for the account holder that has bulk
+            money they want to keep aside for a period usually more than a month at a fairly priced interest rate.
+          </p>
+          <a class="btn btn-sm logged-out" href="/register">Get Started</a>
+          <a class="btn btn-sm logged-in" href="/dashboard/createplan/?plan=termfund">Get Started</a>
+        </div>
+      </div>
+      <hr class="space">
+      <hr class="space">
+      <div class="row vertical-row">
+        <div class="col-md-6">
+          <img class="anima" src="../../../images/gallery/image-4.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h2><a href="#">Smart Savings</a></h2>
+          <p class="niche-box-content">
+            The Smart Savings Program is a premium savings scheme that offers investors an attractive alternative to
+            bank deposits and savings accounts as well as the flexibility to achieve their investment needs and
+            objectives through a single investment vehicle.
+          </p>
+          <a class="btn btn-sm logged-out" href="/register">Get Started</a>
+          <a class="btn btn-sm logged-in" href="/dashboard/createplan/?plan=smartsavings">Get Started</a>
+        </div>
+      </div>
+      <hr class="space">
+      <hr class="space">
+      <div class="row vertical-row">
+        <div class="col-md-6 col-md-push-6">
+          <img class="anima" src="../../../images/gallery/image-5.jpg" alt="" />
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <h2><a href="#">iClub</a></h2>
+          <p class="niche-box-content">
+            The Brass & Books iClub is an exclusive community of serious private investors who pool together
+            resources to invest in alternative investments, diversify risks and enjoy great returns and profits as
+            we pool together ideas and thus become better investors.
+          </p>
+          <a class="btn btn-sm logged-out" href="/register">Get Started</a>
+          <a class="btn btn-sm logged-in" href="/dashboard/createplan/?plan=iclub">Get Started</a>
+        </div>
+      </div>
+      <!--
+        <div class="row">
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-1.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">eSavings</a></h2>
+              <p class="niche-box-content">
+                A convenient, secure and supporting savings product that enables you to increase your cash base and
+                creating extra income. It is a daily fixed amount contribution with withdrawals only allowed at the end
+                of the month of the contribution if need be.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-2.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Daily Micro Investments (DMI)</a></h2>
+              <p class="niche-box-content">
+                A holder of this account saves for a period of twelve(12) months without withdrawals and earns
+                competitive interest of 8% and then he/she can have access to loan facility worth twice of his
+                investment from Brass & Books MPC ltd.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-3.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Term Fund</a></h2>
+              <p class="niche-box-content">
+                This product offers a convenient, flexible and secure saving option for the account holder that has bulk
+                money they want to keep aside for a period usually more than a month at a fairly priced interest rate.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="space">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-1.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Smart Savings</a></h2>
+              <p class="niche-box-content">
+                The Smart Savings Program is a premium savings scheme that offers investors an attractive alternative to
+                bank deposits and savings accounts as well as the flexibility to achieve their investment needs and
+                objectives through a single investment vehicle.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-2.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">iClub</a></h2>
+              <p class="niche-box-content">
+                The Brass & Books iClub is an exclusive community of serious private investors who pool together
+                resources to invest in alternative investments, diversify risks and enjoy great returns and profits as
+                we pool together ideas and thus become better investors.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="space" />
+      <h2 class="text-center">Investment Products</h2>
+      <hr class="space">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-1.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Bond Fund</a></h2>
+              <p class="niche-box-content">
+                The Brass & Books Bond fund is a managed investment scheme invested primarily in debt instruments to
+                provide intervention working capital for small and medium enterprises to meet liquidity and on-going
+                business demands.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-2.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Growth Fund</a></h2>
+              <p class="niche-box-content">
+                This fund provides financing, structure and mentorship for small and medium enterprises. We structure
+                unique, individualised financing solutions using shareholders’ loans, equity, royalties and term loans –
+                or any combination of these and provides value-added expert assistance whilst ensuring the funds of the
+                investor is safe and yielding sustainable cashflow.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-3.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Agro Fund</a></h2>
+              <p class="niche-box-content">
+                The BBAF is an investment providing access to a diversified portfolio of Agric/Food and other Agro based
+                businesses. This fund participates in the consolidation and growth in the West African agric-sector by
+                acquiring significant stakes in strategic agric and food businesses to create a diversified portfolio by
+                geography, commodity and type.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="space">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="advs-box advs-box-top-icon-img niche-box-post boxed-inverse" data-anima="scale-rotate"
+            data-trigger="hover">
+            <a class="img-box"><img class="anima" src="../../../images/gallery/image-1.jpg" alt="" /> </a>
+            <div class="advs-box-content">
+              <h2><a href="#">Premuim Fund</a></h2>
+              <p class="niche-box-content">
+                The Brass & Books Premium Fund is a mid-term Investment vehicle for the discerning investor, providing a
+                viable source of financing for lower middle market companies in Africa. <br>
+                Brass & Books Financial Services is actively raising a N1B fund that seeks to deploy N5m – 50m of growth
+                capital investments in small and medium sized enterprises via the use of mezzanine debt and quasi-equity
+                instruments to firms operating across West Africa.
+              </p>
+              <a class="btn btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="section-empty">
+    <div class="container content">
+      <div class="row vertical-row" data-anima="pulse-horizontal">
+        <div class="col-md-6">
+          <form action="http://www.framework-y.com/scripts/php/contact-form.php" class="form-box form-ajax form-inline"
+            method="post" data-email="federico@pixor.it">
+            <input id="email" name="email" placeholder="Type your email..." type="email" class="form-control form-value"
+              required="">
+            <hr class="space m">
+            <button class="btn btn-sm" type="submit">Join now</button>
+            <div class="success-box">
+              <div class="alert alert-success">Congratulations. Your message has been sent successfully
+              </div>
+            </div>
+            <div class="error-box">
+              <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p class="text-s">
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod iaculis eu
+            lacus nunc mi elitvehicula ut laoreet acaliquam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <i class="scroll-top scroll-top-mobile show fa fa-sort-asc"></i>
+  <footer class="footer-base">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-center text-left">
+            <img width="120" src="../images/bbmpcs-logo.png" alt="" />
+          </div>
+          <div class="col-md-6 footer-left text-left">
+            <p>No 62, Erepa Road,
+              Yenizuegene,
+              Yenagoa,
+              Bayelsa State,
+              Nigeria</p>
+            <div class="tag-row">
+              <span>hello@bbmpcs.ng</span>
+              <span>+2349030487810</span>
+            </div>
+          </div>
+          <div class="col-md-3 footer-left text-right text-left-sm">
+            <div class="btn-group social-group btn-group-icons">
+              <a target="_blank" href="https://facebook.com/brassandbooks" data-social="share-facebook">
+                <i class="fa fa-facebook text-xs circle"></i>
+              </a>
+              <a target="_blank" href="https://instagram.com/brassandbooks" data-social="share-instagram">
+                <i class="fa fa-instagram text-xs circle"></i>
+              </a>
+              <!--<a target="_blank" href="#" data-social="share-google">
+									<i class="fa fa-google-plus text-xs circle"></i>
+							</a>
+							<a target="_blank" href="#" data-social="share-linkedin">
+									<i class="fa fa-linkedin text-xs circle"></i>
+							</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row copy-row">
+        <div class="col-md-12 copy-text">
+          © 2019 BBMPCS <span>Developed by <a class="para" href="http://safescrow.com.ng/">SafeScrow</span></a>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="../HTWF/scripts/font-awesome/css/font-awesome.css">
+    <script src="../HTWF/scripts/index.js"></script>
+    <script async src="../HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../HTWF/scripts/imagesloaded.min.js"></script>
+    <script src='../HTWF/scripts/jquery.progress-counter.js'></script>
+    <script src='../HTWF/scripts/jquery.magnific-popup.min.js'></script>
+    <script src="../HTWF/scripts/smooth.scroll.min.js"></script>
+    <script src="../HTWF/scripts/php/contact-form.js"></script>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | BBMPCS</title>
+  <meta name="description" content="Service page with background video MP4">
+  <script src="../HTWF/scripts/jquery.min.js "></script>
+  <script src="../HTWF/scripts/parallax.min.js"></script>
+  <link rel="stylesheet" href="../HTWF/scripts/bootstrap/css/bootstrap.css">
+  <script src="../HTWF/scripts/script.js"></script>
+  <link rel="stylesheet" href="../HTWF/style.css">
+  <link rel="stylesheet" href="../HTWF/css/content-box.css">
+  <link rel="stylesheet" href="../HTWF/css/animations.css">
+  <link rel="stylesheet" href="../HTWF/css/components.css">
+  <link rel="stylesheet" href="../HTWF/scripts/magnific-popup.css">
+  <link rel="stylesheet" href="../HTWF/scripts/php/contact-form.css">
+  <link rel="icon" href="../images/bbmpcs-logo.png">
+  <link rel="stylesheet" href="../skin.css">
+  <link rel="stylesheet" href="../HTWF/css/style.css">
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <!--Begin Head Section-->
+  <header class="fixed-top scroll-change" data-menu-anima="fade-bottom">
+    <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-main">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo-default" src="../images/bbmpcs-logo.png" alt="logo" />
+              <img class="logo-retina" src="../images/bbmpcs-logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <div class="nav navbar-nav navbar-left">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="/save">Save</a>
+                </li>
+                <li>
+                  <a href="/invest">Invest</a>
+                </li>
+                <li>
+                  <a href="/loan">Loan</a>
+                </li>
+                <li>
+                  <a href="/about-us">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="logged-out">
+                  <a href="/login">Login</a>
+                </li>
+                <li class="logged-out active">
+                  <a href="/register">Register</a>
+                </li>
+                <li class="logged-in dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#"><span
+                      id="userDetails"></span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu multi-level">
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/dashboard/profile">Profile</a></li>
+                    <li id="logout"><a href="/logout">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--End Head Section-->
+  <!--Begin Title Section-->
+  <div class="header-title" style="background-image:url(../images/bg-img-3.png)">
+    <div class="container">
+      <div class="title-base">
+        <hr class="anima" />
+        <h1>Register</h1>
+        <p>Create a BBMPCS account</p>
+      </div>
+    </div>
+  </div>
+  <!--End Title Section-->
+  <!--Begin Form Section-->
+
+  <div class="section-bg-img section-item" style="background-image:url(../images/bg-17.png)">
+    <hr class="space">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-center boxed-inverse shadow-1">
+          <div class="alert" id="register-alert"></div>
+          <div id="main-form">
+            <form id="register-form" class="form-box form-ajax">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" class="form-control form-value"
+                  placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" class="form-control form-value" placeholder="Last Name"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control form-value" inputmode="email"
+                  placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control form-value"
+                  placeholder="Password" current-password required>
+              </div>
+              <input type="submit" value="Register" class="circle-button btn btn-block" id="register-button">
+            </form>
+            <p class="text-center">Already have an account? <a href="/login" class="para">Login</a></p>
+            <p class="text-center">By registering, you agree to our <a href="#" class="para" target="_blank"
+                rel="noopener noreferrer">Terms and Conditions</a></p>
+          </div>
+          <div id="otp">
+            <form id="otp-form" class="form-box form-ajax">
+              <div class="form-group">
+                <div class="form-group">
+                  <label for="otp-code">Email</label>
+                  <input type="email" name="email" id="verify-email" class="form-control form-value" disabled required>
+                </div>
+                <label for="otp-code">OTP</label>
+                <input type="text" name="otp-code" id="otp-code" class="form-control form-value" pattern="[0-9]*"
+                  inputmode="numeric" placeholder="OTP" required>
+              </div>
+              <input type="submit" value="Submit" class="circle-button btn btn-block" id="otp-button">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="space">
+  </div>
+  <!--End Form Section-->
+  <!--Begin Footer Section-->
+  <footer class="footer-base">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-center text-left">
+            <img width="120" src="../images/bbmpcs-logo.png" alt="" />
+          </div>
+          <div class="col-md-6 footer-left text-left">
+            <p>No 62, Erepa Road,
+              Yenizuegene,
+              Yenagoa,
+              Bayelsa State,
+              Nigeria</p>
+            <div class="tag-row">
+              <span>hello@bbmpcs.ng</span>
+              <span>+2349030487810</span>
+            </div>
+          </div>
+          <div class="col-md-3 footer-left text-right text-left-sm">
+            <div class="btn-group social-group btn-group-icons">
+              <a target="_blank" href="https://facebook.com/brassandbooks" data-social="share-facebook">
+                <i class="fa fa-facebook text-xs circle"></i>
+              </a>
+              <a target="_blank" href="https://instagram.com/brassandbooks" data-social="share-instagram">
+                <i class="fa fa-instagram text-xs circle"></i>
+              </a>
+              <!--<a target="_blank" href="#" data-social="share-google">
+                    <i class="fa fa-google-plus text-xs circle"></i>
+                </a>
+                <a target="_blank" href="#" data-social="share-linkedin">
+                    <i class="fa fa-linkedin text-xs circle"></i>
+                </a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row copy-row">
+        <div class="col-md-12 copy-text">
+          © 2019 BBMPCS <span>Developed by <a class="para" href="http://safescrow.com.ng/">SafeScrow</span></a>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="../HTWF/scripts/font-awesome/css/font-awesome.css">
+    <!-- <script src="../HTWF/scripts/main.js"></script> -->
+    <script async src="../HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../HTWF/scripts/imagesloaded.min.js"></script>
+    <script src='../HTWF/scripts/jquery.progress-counter.js'></script>
+    <script src='../HTWF/scripts/jquery.magnific-popup.min.js'></script>
+    <script src="../HTWF/scripts/smooth.scroll.min.js"></script>
+    <script>
+      if (user) {
+        window.location = '/dashboard';
+      }
+      $("#otp-form").hide();
+    </script>
+    <!--<script src="../HTWF/scripts/php/contact-form.js"></script>-->
+  </footer>
+  <!--End Footer Section-->
+</body>
+
+</html>
